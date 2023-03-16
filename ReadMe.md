@@ -1,6 +1,6 @@
 # 박소영
 ## 23.03.16 (3주차) <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
-
+---
 ###  README 작성요령 
  
 
@@ -14,8 +14,11 @@
 ---
 
 
-#### 개발환경 준비 (node.js)
 
+참고교재 **<소플의 처음만난 리액트>**
+
+---
+개발환경 준비 (node.js)
 ###  **REACT**
  >- React = 사용자 인터페이스를 만들기 위한 자바스크립트 라이브러리
  
@@ -42,3 +45,7 @@
 >    - 자바스크립트를 공부한 경우 빠르게 학습할 수 있다.
 >2. 높은 상태 관리 복잡도
 >    - state, component life cycle 등의 개념이 있지만 그리 어렵지 않다.
+
+---
+
+

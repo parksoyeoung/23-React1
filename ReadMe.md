@@ -1,4 +1,26 @@
 # 박소영
+---
+## 23.03.30 5주차 
+#### 참고교재 소플의 처음 만난 리액트
+
+### 1. <mark>엘리먼트</mark>의 정의
+~~~
+ - 엘리먼트는 리액트 앱을 구성하는 요소를 의미
+
+
+~~~
+### 2. <mark>엘리먼트</mark> 의 생김새
+~~~
+- 리액트 엘리먼트는 자바스크립트 객체의 형태로 존재
+- 컴포넌트(button등), 속성(color 등) 및 내부의 모든 chidren을 포함하는 일반 JS 객체
+- 이 객체는 마음대로 변경할 수 없는 불변성을 갖고있다.
+~~~
+
+
+
+
+
+---
 ## 23.03.16 (3주차) <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
 ---
 ###  README 작성요령 
@@ -47,5 +69,10 @@
 >    - state, component life cycle 등의 개념이 있지만 그리 어렵지 않다.
 
 ---
+### **실습 creat-react-app**
 
-
+<pre>
+<code>
+$ npx create-react-app
+</code>
+</pre>

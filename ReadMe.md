@@ -6,9 +6,10 @@
 #### 참고교재 소플의 처음 만난 리액트
 
 ---
-### 실습 <댓글 컴포넌트 만들기> <div><br>
+### <B> 실습 <댓글 컴포넌트 만들기> <div><br>
 
-Comment.jsx
+<B> Comment.jsx
+
 ```js
 import React from "react";
 
@@ -23,7 +24,8 @@ function Comment(props){
 export default Comment;
 ```
 
-CommentList.jsx
+<B> CommentList.jsx
+
 ```js
 import React from "react";
 import Comment from "./Comment";
@@ -39,7 +41,8 @@ function CommentList(props){
 export default CommentList;
 ```
 
-index.js
+<B> index.js
+
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -59,8 +62,25 @@ setInterval(() => {
 
 ```
 
+## <B> State 
+~~~
+- 리액트 컴포넌트의 상태를 의미
+- 상태의 의미는 정상인지 비정상인지가 아니라 컴포넌트의 데이터를 의미
+- 정확히는 컴포넌트의 변경가능한 데이터를 의미
+- state가 변하면 다시 렌더링이 되기 때문에 렌더링과 관련된 값만 state에 포함시켜야 합니다.
+~~~
+> 리액트만의 특별한 형태가 아닌 단지 자바스크립트객체일 뿐이다.
 
-
+## <B> 생명주기 
+~~~
+- 컴포넌트의 생성 시점, 사용시점, 종료 시점을 나타내는 것입니다.
+- CONSTRUCTOR가 실행되면서 컴포넌트가 생성됩니다.
+- 생성직후 conponentDidMount() 함수가 호출됩니다.
+- 컴포넌트가 소멸하기까지 여러번 랜더링 합니다.
+- 렌더링은 props, setState(), forceUpdate()에 의해 상태가 변경되면 이루어진다.
+- 렌더링이 끝나면 conponentDidMount() 함수가 호출
+- 컴포넌트가 언마운트 되면 conpomentWillUnmount() 함수가 호출됩니다.
+~~~
 ## 23.03.30 5주차 
 <br>
 

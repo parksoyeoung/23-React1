@@ -1,11 +1,72 @@
 # 박소영
 ---
+## 23.04.06 6주차 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
+<br>
+
+#### 참고교재 소플의 처음 만난 리액트
+
+---
+### 실습 <댓글 컴포넌트 만들기> <div><br>
+
+Comment.jsx
+```js
+import React from "react";
+
+function Comment(props){
+  return (
+    <div>
+    <h1>제가 만든 첫 컴포넌트 입니다.</h1>
+    </div>
+  );
+}
+
+export default Comment;
+```
+
+CommentList.jsx
+```js
+import React from "react";
+import Comment from "./Comment";
+
+function CommentList(props){
+  return (
+    <div>
+     <Comment/>
+    </div>
+  );
+}
+
+export default CommentList;
+```
+
+index.js
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import CommentList from './chapter_05/Comment';
+
+setInterval(() => {
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+    <CommentList />
+    </React.StrictMode>
+  );
+}, 1000);
+
+```
+
+
+
 ## 23.03.30 5주차 
 <br>
 
 #### 참고교재 소플의 처음 만난 리액트
 
-<br>
+---
 
 ## 엘리먼트
 ### 1. <mark>엘리먼트</mark>의 정의

@@ -1,5 +1,74 @@
 # 박소영
 ---
+
+## 23.04.06 9주차 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
+---
+#### 참고교재 소플의 처음 만난 리액트
+---
+## 리스트
+```같은 아이템을 순서대로 모아놓은 것```
+> 우리말로 목록 이라는 뜻을 가지고있음 <br>
+리스트를 위해 사용하는 자료구조 = 배열 <br>
+
+배열이란?
+```
+자바스크립트의 변수나 객체를 하나의 변수로 묶어놓은 것
+```
+```js
+const numbers = [1, 2, 3, 4, 5];
+```
+
+## 키
+``` 각 객체나 아이템을 구분할 수 있는 고유한 값``` <br>
+
+## 여러 개의 컴포넌트 렌더링 <br>
+
+-자바스크립트 배열의 map() 함수를 사용
+- 배열에 들어있는 각 변수에 어떤처리를 한 뒤 결과를 배열로 만들어서 리턴함 
+- map() 함수 안에 있는 엘리먼트는 꼭 키가 필요함
+
+## map()
+> 배열에 들어있는 각 변수에 어떤 처리를 한 뒤 리턴하는 것
+## 리스트의 키
+> 리스트에서 아이템을 구분하기 위한 고유한 문자열
+
+### 키값으로 숫자의 값을 사용
+```js
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number)) =>
+      <lis key={number.toString()}>
+        {number}
+      </li>
+);
+```
+>numbers 배열에 중복된 숫자가 들어있다면 키값도 중복되기때문에 고유해야 한다는 키값의 조건이 충족되지 않음.
+
+### 키값으로 숫자의 값을 사용
+> id의 의미 자체가 고유한 값이라는 것이기 때문에 키값으로 사용하기 적합
+```js
+const todoItems = todos.map((todo)=>
+     <li key={todo.id}>
+          {todo.text}
+     </li>
+);
+```
+### 키값으로 인덱스(index) 사용
+>아이템들의 고유한 id가 없을 경우에만 사용하는 것이 좋다. <br>
+```리액트에서 키를 명시적으로 넣어 주지 않으면 기본적으로 이 인덱스 값을 키값으로 사용```
+
+```js
+const todoItems = todos.map((todo, index) =>
+//아이템들의 고유한 ID가 없을 경우에만 사용해야 함
+     <li key={index}>
+         {todo.text}
+     </li>
+);
+```
+
+
+
+
+---
 ## 23.04.06 6주차 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
 <br>
 
